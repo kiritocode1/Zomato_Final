@@ -9,6 +9,6 @@ zomato.use(express.urlencoded({ extended: false }));
 zomato.use(helmet());
 zomato.use(cors());
 
-zomato.get("/", (req, res) => res.json({ message: "hello aparna" }));
+zomato.get("/", (req, res) => res.json({ message: "hello there how do you do " }));
 
-zomato.listen(4000, () => console.log("serv is up and running"));
+zomato.listen(4000, () => console.log("server is up and running "));
