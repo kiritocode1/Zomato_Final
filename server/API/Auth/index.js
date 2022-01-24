@@ -21,7 +21,20 @@ Router.post("/signup", async (req, res) => {
         if (checkUserByEmail || checkUserByPhone) {
             return res.json({ error: "user already exists" });
         }
+        // hashing redone
+        const bcryptSalt = await bcrypt.genSalt(8);
+        const hashedPassword = await bcrypt.hash(password, bcryptSalt);
+        
+        //! save to DB
+        await UserModel.create({ ...req.body.credentials, password: hashedPassword });
+        
+        
+        
+        //! JWT token
+        const token = jwt.sign({ user: { fullname, email } }, "ZomatoApp");
+        return res.status(200).json({ token, status: "success" });
+    
     } catch (error) {
-        return res.status(500).json({ error: console.error(.message)});
+        return res.status(500).json({ error: error.message});
     }
 });
