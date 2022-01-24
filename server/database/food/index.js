@@ -6,6 +6,9 @@ const FoodSchema = new mongoose.Schema({
     isConstainsEgg: { type: Boolean, required: true },
     category: { type: String, required: true },
     photos: { type: mongoose.Types.ObjectId, ref: "Images" },
+    
+    //! mongoose.types.object id is reference to images schema
+    
     price: { type: Number, default: 150, required: true },
     addOns: [
         {
@@ -18,7 +21,8 @@ const FoodSchema = new mongoose.Schema({
         ref: "Restaurants",
         required:true
     }
-
-
-
+}, {
+    timestamps:true
 });
+
+export const FoodModel = mongoose.model("Foods", FoodSchema);
