@@ -29,7 +29,7 @@ async(accessToken, refreshToken, profile, done) => {
       done(null, {user, token});
     } else {
       //create a new user
-      const user = await UserModel.create(newUser);
+        const user = await UserModel.create(newUser);
 
       //generating jwt token
       const token = user.generateJwtToken();
