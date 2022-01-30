@@ -3,15 +3,15 @@ import { Route } from "react-router-dom";
 import HomeLayout from "../layout/home.layout";
 
 
-const  HomeLayoutHOC = ({ component: Component, ...rest }) => {
+const HomeLayoutHOC = ({ component: Component, ...rest }) => {
     return (
         <>
             <Route
                 {...rest}
                 component={(props) => {
-                    <HomeLayout>
+                    <HomeLayout >
                     <Component {...props}/>
-                </HomeLayout>
+                    </HomeLayout>
             }}
         />
         </>
