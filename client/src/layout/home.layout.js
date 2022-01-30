@@ -11,7 +11,6 @@ const HomeLayout = (props) => {
     return (<div className="container mx-auto">
         <Navbar />    
         {props.children}
-
     </div>);
 };
 

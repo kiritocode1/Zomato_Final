@@ -5,8 +5,8 @@ import {FaBars} from "react-icons/fa"
 const MobileNav = () => { 
     return (
         <>
-            <div className="bg-green-500 w-full flex h-10 items-center justify-between">
-                <FaBars className="w-10"/>
+            <div className="bg-invisible w-full flex h-20 items-center justify-between">
+                <FaBars className="w-10 h-6"/>
                 <img src={logo} alt="zomato-black" className="h-[6.9rem]" />
             </div>
         </>
@@ -19,7 +19,7 @@ const TabletNav = () => {
         <>
             <div className="flex text-white">
                 yo
-
+            
             </div>
         
         
@@ -35,10 +35,6 @@ const DesktopNav = () => {
         <div className="text-red-500">
             this is done
     </div>
-    
-    
-    
-    
     </>);
 };
 
@@ -49,7 +45,7 @@ const Navbar = () => {
     return (
         <>
         <nav
-className="md:hidden bg-red-500">
+className="md:hidden bg-invisible">
 <MobileNav/></nav>
         <nav className="hidden md:flex lg:hidden  bg-slate-600">
             <TabletNav/></nav>
