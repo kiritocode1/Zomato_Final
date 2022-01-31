@@ -1,16 +1,14 @@
 import React from "react";
-import Navbar from "../Component/Navbar/index";
-
-
-
-
-
+// import Navbar from "../Component/Navbar/index";
+// import Temp from "../Component/temp";
+import MovieNavBar from "../Component/MainNavBar";
 
 
 const HomeLayout = (props) => {
     return (<div className="container w-full mx-auto">
-        <Navbar />    
-        {props.children}
+        <MovieNavBar/>
+        {/* <Navbar /> */}
+        {/* <Temp /> */}
     </div>);
 };
 

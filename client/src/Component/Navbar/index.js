@@ -131,13 +131,13 @@ const TabletNav = () => {
 const Navbar = () => { 
     return (
         <>
-        <nav
+        <div
 className="md:hidden bg-invisible">
-<MobileNav/></nav>
-        <nav className="hidden md:flex lg:hidden  bg-invisible">
-           <TabletNav/></nav>
-<nav className="hidden lg:flex justify-evenly bg-invisible ">
-                <DesktopNav/></nav>
+<MobileNav/></div>
+        <div className="hidden md:flex lg:hidden  bg-invisible">
+           <TabletNav/></div>
+<div className="hidden lg:flex justify-evenly bg-invisible ">
+                <DesktopNav/></div>
         </>
     );
 };
