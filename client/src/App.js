@@ -7,7 +7,7 @@ import HomeLayout from "./layout/home.layout";
 function App() {
   return (
     <>
-      <HomeLayout path="/" exact component={Temp} />
+      <HomeLayout path="/" exact component={Temp} /> 
     </>
   );
 };

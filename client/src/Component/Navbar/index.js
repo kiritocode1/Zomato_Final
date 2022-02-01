@@ -124,7 +124,7 @@ const TabletNav = () => {
     );
 
 
- };
+};
 
 
 
@@ -135,7 +135,7 @@ const Navbar = () => {
 className="md:hidden bg-invisible">
 <MobileNav/></div>
         <div className="hidden md:flex lg:hidden  bg-invisible">
-           <TabletNav/></div>
+        <TabletNav/></div>
 <div className="hidden lg:flex justify-evenly bg-invisible ">
                 <DesktopNav/></div>
         </>

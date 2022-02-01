@@ -3,10 +3,9 @@ import React from "react";
 const Temp = () => { 
     return (
         <>
-            <div>
+        <div>
                 this is a temp component
         </div>
-        
         </>
     );
 };

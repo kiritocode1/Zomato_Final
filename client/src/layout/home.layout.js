@@ -1,12 +1,12 @@
 import React from "react";
 // import Navbar from "../Component/Navbar/index";
 // import Temp from "../Component/temp";
-import LargeNavBar from "../Component/MainNavBar";
+import MainNavBar from "../Component/MainNavBar";
 
 
 const HomeLayout = (props) => {
     return (<div className="container w-full mx-auto">
-        <LargeNavBar/>
+        <MainNavBar/>
         {/* <Navbar /> */}
         {/* <Temp /> */}
     </div>);
