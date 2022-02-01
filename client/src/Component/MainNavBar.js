@@ -4,7 +4,7 @@ import background from "./Navbar/background.jpeg";
 import { BsPhone,BsGeoAltFill,BsCaretDownFill,BsSearch } from "react-icons/bs";
 
 
-const MovieNavBar = () => { 
+const LargeSizedNavbar = () => { 
     return (
         <>
             <div className=" z-0 w-full flex flex-col relative items-center  justify-between h-[26rem]">
@@ -21,10 +21,8 @@ const MovieNavBar = () => {
                 </div>
                 <div className="z-[1] h-full flex  flex-col items-center bg-invisible w-full justify-right pt-20 text-white gap-6">
                     <img src={logo} alt="zomato logo" className="bg-invisible w-80 h-[5.2rem]  bg-invisible" />
-                    <div className="text-5xl font-sans">Discover the best shit in the world </div>
-
-
-                     <div className=" mt-2 bg-white flex items-center h-[3rem] hover:shadow-slate-300	 hover:shadow-md w-[49rem]  rounded-lg px-2 ">
+                    <div className="text-5xl font-sans text-center">Discover the best shit in the world </div>
+                    <div className=" mt-2 bg-white flex items-center h-[3.4rem]  w-[50rem]  rounded-lg px-2 ">
                         <BsGeoAltFill className="text-rose-400 pr-1 w-8 h-full stroke-1" />
                         <input type="text" placeholder="hii" className="h-full  w-40 border-0 focus:outline-none focus:
                         text-black" name="cities" list="cities" />
@@ -42,7 +40,6 @@ const MovieNavBar = () => {
                         <input type="text" placeholder="search for Restraunt cuisine and dishes" className="h-full  border-0 w-full  focus:outline-none focus:text-slate-500 text-light italic cursor-pointer focus:cursor-text" />
                         
                     </div>
-
                 </div>
             </div>
         </>
@@ -50,4 +47,4 @@ const MovieNavBar = () => {
 };
 
 
-export default MovieNavBar; 
+export default LargeSizedNavbar; 
