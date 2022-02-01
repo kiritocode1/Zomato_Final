@@ -22,7 +22,7 @@ const LargeSizedNavbar = () => {
                 <div className="z-[1] h-full flex  flex-col items-center bg-invisible w-full justify-right pt-20 text-white gap-6">
                     <img src={logo} alt="zomato logo" className="bg-invisible w-80 h-[5.2rem]  bg-invisible" />
                     <div className="text-5xl font-sans text-center">Discover the best shit in the world </div>
-                    <div className=" mt-2 bg-white flex items-center h-[3.4rem]  w-[50rem]  rounded-lg px-2 ">
+                    <div className=" mt-2 bg-white flex items-center h-[3.4rem]  w-[70%]  rounded-lg px-2 ">
                         <BsGeoAltFill className="text-rose-400 pr-1 w-8 h-full stroke-1" />
                         <input type="text" placeholder="hii" className="h-full  w-40 border-0 focus:outline-none focus:
                         text-black" name="cities" list="cities" />
@@ -33,8 +33,8 @@ const LargeSizedNavbar = () => {
                                 <option value="Opera"/>
                                 <option value="Safari"/>
                         </datalist> */}
-                        <div className="w-[2rem] border-r-2 h-5 flex items-center mx-2">
-                            <BsCaretDownFill className="w-6" />
+                        <div className="w-[2rem] border-r-2 h-5 flex items-center mx-2 text-black">
+                            <BsCaretDownFill className="w-8" />
                         </div>
                         <BsSearch className="h-full bg-invisible w-6 mx-1 text-gray-500"/>
                         <input type="text" placeholder="search for Restraunt cuisine and dishes" className="h-full  border-0 w-full  focus:outline-none focus:text-slate-500 text-light italic cursor-pointer focus:cursor-text" />
@@ -46,5 +46,27 @@ const LargeSizedNavbar = () => {
     );
 };
 
-
-export default LargeSizedNavbar; 
+const MiddleSizedNavBar = () => {
+    return (
+        <>
+        
+        <div className="z-0 w-full flex flex-col relative items-center  justify-between h-[26rem]">
+                middle and small screen
+        </div>
+        
+        
+        
+        
+        </>
+    );
+};
+const MainNavBar = () => {
+    return (
+        <>
+        <div className="md:hidden bg-invisible"><MiddleSizedNavBar/></div>
+        <div className="hidden md:flex lg:hidden  bg-invisible"><LargeSizedNavbar/></div>
+        <div className="hidden lg:flex justify-evenly bg-invisible "><LargeSizedNavbar/></div>
+        </>
+    );
+};
+export default MainNavBar; 
